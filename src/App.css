@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.center-div {
+  background-color: rgb(244, 252, 238);
+  width: 25%;
+  height: 80vh;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: hsl(0, 0%, 96%);
+  background-color: blueviolet;
+  padding: 6px 0 2px 0;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.newtask {
+  text-align: center;
+  height: 30px;
+  width: 60%;
+  top: 10px;
+  border: none;
+  border-bottom: 2px solid blueviolet;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+}
+
+.addtaskbtn {
+  min-height: 5px;
+  width: 45px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: blueviolet;
+  color: white;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  cursor: pointer;
+  box-shadow: 5px 15px 15px -15px rgb(0, 0, 0);
+}
+
+.addtaskbtn:hover {
+  background-color: rgb(43, 226, 70);
+}
+
+ol {
+  margin-top: 30px;
+}
+
+ol li {
+  padding-left: 0;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: blueviolet;
+  text-transform: capitalize;
+}
+
+.todo_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo_style li {
+  margin-right: auto; 
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px; 
+}
+
+
+.delete-btn .fa {
+  color: blueviolet;
+  font-size: 20px;
+}
+
+.delete-btn:hover .fa {
+  color: rgb(20, 220, 40);
+}
+
+@media (max-width: 768px) {
+  .center-div {
+    width: 60%;
+  }
+
+  .todo_style .fa-items {
+    margin: 15px 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addtaskbtn {
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    color: white;
+    font-size: 30px;
+  }
+}
